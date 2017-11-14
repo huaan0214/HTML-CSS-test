@@ -1,0 +1,59 @@
+
+
+ul{
+	padding:0px;
+}
+li{
+	display:inline-block;
+	padding:10px;
+}
+/*body描述CSS*/
+body{
+	background-color:white;
+	color:black;
+	font-family:'Microsoft YaHei',serif;
+	font-size:100%;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:0;
+	margin-left:0;
+}
+#header{
+	padding-top:1rem;
+	padding-bottom:0.75rem;
+}
+#footer {
+	padding-top:1rem;
+	padding-bottom:0.75rem;
+}
+.mdl-color--primary {
+    background-image: linear-gradient(-405deg,#A9C034 27%, #129f86 100%);
+}
+.header-logo-position{
+	position:relative;/*relative 相对位置；absolute绝对位置;fixed固定位置*/
+	left:30px;
+}
+.text-mode-header{
+	font-size:17px;
+	font-weight:100;
+}
+.text-mode-footer{
+	font-size:15px;
+	font-weight:100;
+	color:gray;
+}
+a[href]{
+	text-decoration:none;
+}
+a:link{
+	color:gray;
+}
+a:visited{
+	color:gray;
+}
+a:hover{/*鼠标悬浮时*/
+	color:white;
+}
+a:active{/*鼠标点击时*/
+	color:white;
+}

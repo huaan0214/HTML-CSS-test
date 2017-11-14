@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>网址导航</title>
+<link rel="stylesheet" type="text/css"href="style.css">
+</head>
+<body>
+	
+<nav id="header"class="mdl-color--primary">
+	<a class ="header-logo-position" href= "http://music.163.com" target="_blank"><img src="H1.png" width="80" height="40"></a>
+		<ul  class="text-mode-header"style="float:right;">
+			<li><a href="http://www.baidu.com" target="_blank">百度一下，你就知道</a></li>
+			<li><a href="http://music.163.com" target="_blank">网易云音乐</a></li>
+			<li><a href="http://eip.asus.com/Default.aspx?lang=tw" target="_blank">ASUS EIP</a></li>
+		</ul>
+	
+</nav> 
+<!上面OK>
+<script type="text/javascript">
+	var content="让我们开始一个小的项目吧";
+	var chapter=0;
+	chapter+=2;
+	content+="现在是章节"+chapter+"!";
+	console.log(content);
+	document.write(content);
+</script>
+
+<!下面是插入图片以及各个属性用法（alt,width,height）>
+<!img src="https://www.zhiliaoxuexi.com/logo.png" alt="图片加载失败">
+<!img src="https://www.zhiliaoxuexi.com/images/logo.png">
+<!img src="http://img9.3lian.com/c1/vector/10/01/043.jpg" width="30" height="30">
+<!iframe内容框架>
+<br>
+
+选择你喜欢的颜色: <input type="color" name="favcolor"><br>
+
+<div>
+	<video id="video1" width ="420"  src="https://course.zhiliaoxuexi.com/14879219460971.mov" controls=""></video>
+	<br>
+	<button onclick="playPause()">播放/暂停</button>
+	<button onclick="makeBig()">放大</button>
+	<button onclick="makeSmall()">缩小</button>
+	<button onclick="makeNormal()">普通</button>
+</div>
+<script>
+	var myVideo=document.getElementById("video1");
+	function playPause()
+		{ 
+		if (myVideo.paused) 
+		  myVideo.play(); 
+		else 
+		  myVideo.pause(); 
+		} 
+		
+	function makeBig()
+		{ 
+		myVideo.width=600; 
+		} 
+		
+	function makeSmall()
+		{ 
+		myVideo.width=320; 
+		} 
+		
+	function makeNormal()
+		{ 
+		myVideo.width=420; 
+		} 
+</script>
+<video id="video2" width ="320" height="240"controls=""><source src="https://course.zhiliaoxuexi.com/14879219460971.mov"></video>
+<audio src="http://m10.music.126.net/20171111152625/cc94cd0e0f627f9f0fe60b20b779758a/ymusic/e86a/fd45/c1e4/b97c35e060df08425ed4d80ae0c34f47.mp3" controls=""></audio>
+<audio src="http://m10.music.126.net/20171111152830/609d49f7581ef895566300fc269fe4ef/ymusic/d8ef/090e/77c2/078e0e759d05f637bc946f146697f5d2.mp3" controls=""></audio>
+
+<div id="footer" class="mdl-color--primary">
+	<table style="margin:0 auto;">
+		<tr><th colspan="2" class="text-mode-footer">关注作者</th></tr>
+		<tr>
+			<td><a href="https://weibo.com/3226685150/profile?topnav=1&wvr=6" target="_blank"> <img src="weibo.png"width='60'height="20"alt="图片加载失败,点击关注知微博"> </a></td>
+			<td><a href= "https://www.zhihu.com/people/geng-hua-an-96/activities" target="_blank"><img src="zhihu.jpg" width="20" height="20" alt="图片加载失败,点击关注知乎"></a></td>
+		</tr>
+	</table>
+<div>
+</body>
+</html>
